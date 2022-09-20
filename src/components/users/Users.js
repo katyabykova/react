@@ -10,7 +10,10 @@ const Users = () => {
     let [user, setUser] = useState();
     let [id, setId] = useState()
 
-    const clicked = (user) => setUser(user);
+    const clicked = (user) => {
+        setId(null)
+        setUser(user);
+    }
     const postsofclicked = (id) => setId(id);
 
     useEffect(() => {
