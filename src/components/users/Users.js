@@ -8,7 +8,7 @@ const Users = () => {
 
     let [users, setUsers] = useState([]);
     let [user, setUser] = useState();
-    let [id, setId] = useState([])
+    let [id, setId] = useState()
 
     const clicked = (user) => setUser(user);
     const postsofclicked = (id) => setId(id);
@@ -26,7 +26,7 @@ const Users = () => {
             <div className={'userdetails'}>
                 {user && <Userdetails user={user} postsofclicked={postsofclicked}/>}
             </div>
-            {<div className={'posts'}><Posts id={id} clicked={clicked}/>
+            {id && <div className={'posts'}><Posts id={id} clicked={clicked}/>
                 <hr/>
             </div>}
         </div>
