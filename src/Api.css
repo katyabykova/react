@@ -1,0 +1,25 @@
+.box{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.users{
+    width: 35vw;
+    height: 510px;
+}
+.user, .post{
+    background: mistyrose;
+    padding: 10px;
+    margin: 10px;
+}
+h3{
+    padding: 10px;
+}
+.userdetails{
+    width: 55vw;
+    height: 510px;
+}
+.posts{
+    width: 88vw;
+}
+
